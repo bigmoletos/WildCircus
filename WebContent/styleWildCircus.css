@@ -1,0 +1,914 @@
+@charset "ISO-8859-1";
+
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+/* Ecris ici ton code CSS */
+/*General*/
+/*reset Headings*/
+html {
+	height: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+	margin: 0px;
+	line-height: 1.43;
+/* 	align: center; */
+}
+
+body {
+	height: 100%;
+	line-height: 1.43; /* LE adjusted (1.42857143 bs base Value)*/
+	background-color: black;
+	/* 	background-color: #ff8040; */
+	padding-top: 20px;
+	padding: 5px 10px;
+	color: #f37021;
+/* 	font-weight: 300; */
+	font-weight: 400;
+	/* 	font-size: 15px; */
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	min-width: 200px;
+}
+
+/*import font*/
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+@import url(https://fonts.googleapis.com/css?family=Mystery+Quest);
+
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+@import url(https://use.fontawesome.com/ad145649da.css);
+
+/* * { */
+/* 	outline: none; */
+/* 	box-sizing: border-box; */
+/* 	margin: 0; */
+/* 	padding: 0; */
+/* } */
+
+/* .navbar-nav{ */
+
+/* 	flex-direction:initial; */
+/* } */
+
+/*@media all and (min-width:768px)*/
+/* .bg-black{ */
+/* 	align-content:center; */
+/* } */
+.container-fluid {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Style inline { */
+/* 	/*     [id^=menu] .navbar-default .navbar-brand, [id^=menu].navbar-nav li a, [id^=menu] .navbar-default .navbar-nav > li > a, [id^=menu] .navbar-default .navbar-nav .open .dropdown-menu > li > a, [id^=menu] .navbar-default .navbar-nav .open .dropdown-menu li.dropdown-header { */ */
+/* 	/*     font-family: Oxygen,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif; */ */
+/* 	font-size: 16px; */
+/* 	color: #fd7e16; */
+/* } */
+
+}
+.navbar-toggle {
+	display: none;
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	margin-top: 8px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+/* /*@media all and (min-width:1200px)*/
+* /
+	/* #row-laugh6 > div { */
+	/*     padding: 0px 0px; */
+	/* } */
+	/*tableau des prix */ 
+.table {
+	align-content: center;
+	caption-side: bottom;
+	background-color: #ff8040;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	/* 	max-height: 150px; */
+	/* 	max-width: 60%; */
+}
+
+#comptext-list_prices2, #title_table_price, #title_table_price2 {
+	align-content: center;
+	background-color: #ff8040;
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+
+#title_table_price {
+	/*   background-color: #d96c00; */
+	background-color: #c66300;
+}
+
+/* #container-contact { */
+/* 	align-content: center; */
+/* } */
+
+/*import des images*/
+/* #container-performances { */
+/* 	background-size: cover; */
+/* 	background-position: center center; */
+/* 	background-image: */
+/* 		url("http://cvfd.free.fr/WildCircus/version_codePen/images/circus-677962_1920.jpg"); */
+/* } */
+
+#comptext-performances {
+	
+	background-color: #0b0b0b;
+	border-radius: 20px 20px 20px 20px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 25px 25px 25px 25px;
+	background-size: cover;
+  background-position: center center;
+  background-image:
+    url("http://cvfd.free.fr/WildCircus/version_codePen/images/circus-677962_1920.jpg")
+}
+
+/* #container-marvel6 { */
+/* 	background-size: cover; */
+/* 	background-position: center center; */
+/* 	background-image: */
+/* 		url("http://cvfd.free.fr/WildCircus/version_codePen/images/clown-906961_1280.jpg"); */
+/* } */
+
+/* #container-about3 { */
+/* 	background-size: cover; */
+/* 	background-position: center center; */
+/* 	background-image: */
+/* 		url("http://cvfd.free.fr/WildCircus/version_codePen/images/tour-de-magie_1.jpg"); */
+/* } */
+
+/* #sub-container-list_prices { */
+/* 	background-size: cover; */
+/* 	background-position: left top; */
+/* 	background-image: */
+/* 		url("http://cvfd.free.fr/WildCircus/version_codePen/images/cinema-3700545_640.jpg?"); */
+/* } */
+
+#compcontactform-form2 {
+	border-width: 1px;
+	box-shadow: none;
+	background-color: rgba(245, 245, 245, 0);
+	font-size: 12px;
+	border-color: #c0c0c0;
+}
+
+#compcontactform-form2 .btn-primary {
+	font-family: Oxygen, Arial, Helvetica, 'Liberation Sans', FreeSans,
+		sans-serif;
+	background-color: #fd7e16;
+	color: #ffffff;
+	border-color: rgba(46, 109, 164, 0);
+}
+
+#compcontactform-form2 .btn-primary:hover {
+	background-color: #1b1b1b;
+}
+
+#compcontactform-form2 .header {
+	font-family: Oxygen, Arial, Helvetica, 'Liberation Sans', FreeSans,
+		sans-serif;
+	color: #000000;
+	text-align: center;
+	font-size: 16px;
+}
+
+#compcontactform-form2 .checkbox {
+	font-family: Oxygen, Arial, Helvetica, 'Liberation Sans', FreeSans,
+		sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+
+#compimage-laugh6 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+}
+
+#compimage-dream4 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+}
+
+#compimage-marvel4 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+}
+
+#comptext-footer {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 10px 10px 10px 10px;
+}
+
+#comptext-contact2 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 10px 0px 0px 0px;
+}
+
+#comptext-performances {
+	background-color: #0b0b0b;
+	border-radius: 20px 20px 20px 20px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 25px 25px 25px 25px;
+}
+
+#comptext-dream {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 5px 5px 5px 5px;
+}
+
+#comptext-marvel {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 5px 5px 5px 5px;
+}
+
+#comptext-name_cirque {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#comptext-about {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 10px 0px 0px 0px;
+}
+
+#comptext-laugh3 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 5px 5px 5px 5px;
+}
+
+#comptext-details_performances {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 10px 10px 10px 10px;
+}
+
+#comptext-prices6 {
+	background-color: #000000;
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#comptext-booking {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 10px 10px 10px 10px;
+}
+
+#comptext-padwrapper-performances {
+	padding: 25px 25px 25px 25px;
+}
+
+#container-footer {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #1b1b1b;
+	padding: 15px 15px 30px 15px;
+}
+
+#container-footer>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#container-footer>.container-vspacer {
+	height: 0px;
+}
+
+#container-bandeau {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #404040;
+	padding: 25px 0px 0px 0px;
+}
+
+#container-bandeau>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#container-bandeau>.container-vspacer {
+	height: 0px;
+}
+
+#container-contact {
+	align-content: center;
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#container-contact>.row>.clearfix {
+	margin-bottom: 50px;
+}
+
+#container-contact>.container-vspacer {
+	height: 50px;
+}
+
+#container-about {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#container-about>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#container-about>.container-vspacer {
+	height: 0px;
+}
+
+#container-performances {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 150px 0px;
+}
+
+#container-performances>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#container-performances>.container-vspacer {
+	height: 0px;
+}
+
+#container-details_performances {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#container-details_performances>.row>.clearfix {
+	margin-bottom: 15px;
+}
+
+#container-details_performances>.container-vspacer {
+	height: 15px;
+}
+
+#container-marvel6 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+	background-size: cover;
+  background-position: center center;
+  background-image:
+    url("http://cvfd.free.fr/WildCircus/version_codePen/images/clown-906961_1280.jpg");
+}
+
+#container-marvel6>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#container-marvel6>.container-vspacer {
+	height: 0px;
+}
+
+#container-prices {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#container-prices>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#container-prices>.container-vspacer {
+	height: 0px;
+}
+
+#container-about3 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+	 background-size: cover;
+  background-position: center center;
+  background-image:
+    url("http://cvfd.free.fr/WildCircus/version_codePen/images/tour-de-magie_1.jpg");
+}
+
+#container-about3>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#container-about3>.container-vspacer {
+	height: 0px;
+}
+
+#container-about2 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#container-about2>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#container-about2>.container-vspacer {
+	height: 0px;
+}
+
+#row-performances2 {
+	margin: 0px 0px;
+}
+
+#row-performances2>div {
+	padding: 0px 0px;
+}
+
+#row-about {
+	margin: 0px 0px;
+}
+
+#row-about>div {
+	padding: 0px 0px;
+}
+
+#row-bandeau {
+	margin: 0px 0px;
+}
+
+#row-bandeau>div {
+	padding: 0px 0px;
+}
+
+#row-details_performances {
+	margin: 0px 0px;
+}
+
+#row-details_performances>div {
+	padding: 0px 0px;
+}
+
+#row-form {
+	margin: 0px 0px;
+}
+
+#row-form>div {
+	padding: 0px 0px;
+}
+
+#row-contact2 {
+	margin: 0px 0px;
+}
+
+#row-contact2>div {
+	padding: 0px 0px;
+}
+
+#row-footer {
+	margin: 0px 0px;
+}
+
+#row-footer>div {
+	padding: 0px 0px;
+}
+
+#row-marvel6>.item-rowspacer {
+	height: 50px;
+}
+
+#row-marvel7>.item-rowspacer {
+	height: 50px;
+}
+
+#row-performances>.item-rowspacer {
+	height: 50px;
+}
+
+#row-about2>.item-rowspacer {
+	height: 50px;
+}
+
+#row-marvel {
+	margin: 0px 0px;
+}
+
+#row-marvel>div {
+	padding: 0px 0px;
+}
+
+#row-laugh {
+	margin: 0px 0px;
+}
+
+#row-laugh>div {
+	padding: 0px 0px;
+}
+
+#row-dream {
+	margin: 0px 0px;
+}
+
+#row-dream>div {
+	padding: 0px 0px;
+}
+
+#row-laugh2 {
+	margin: 0px 0px;
+}
+
+#row-laugh2>div {
+	padding: 0px 0px;
+}
+
+#row-laugh5 {
+	margin: 0px 0px;
+}
+
+#row-laugh5>div {
+	padding: 0px 0px;
+}
+
+#row-dream3 {
+	margin: 0px 0px;
+}
+
+#row-dream3>div {
+	padding: 0px 0px;
+}
+
+#row-marvel3 {
+	margin: 0px 0px;
+}
+
+#row-marvel3>div {
+	padding: 0px 0px;
+}
+
+#row-perf>.item-rowspacer {
+	height: 200px;
+}
+
+#row-prices2 {
+	margin: 0px 0px;
+}
+
+#row-prices2>div {
+	padding: 0px 0px;
+}
+
+#row-prices3 {
+	margin: 0px 0px;
+}
+
+#row-prices3>div {
+	padding: 0px 0px;
+}
+
+#row-name_cirque {
+	margin: 0px 0px;
+}
+
+#row-name_cirque>div {
+	padding: 0px 0px;
+}
+
+#row-about4>.item-rowspacer {
+	height: 50px;
+}
+
+#row-about3>.item-rowspacer {
+	height: 50px;
+}
+
+#row-booking {
+	margin: 0px 0px;
+}
+
+#row-booking>div {
+	padding: 0px 0px;
+}
+
+#row-laugh6 {
+	margin: 0px 0px;
+}
+
+#row-laugh6>div {
+	padding: 0px 0px;
+}
+
+#row-dream4 {
+	margin: 0px 0px;
+}
+
+#row-dream4>div {
+	padding: 0px 0px;
+}
+
+#row-marvel4 {
+	margin: 0px 0px;
+}
+
+#row-marvel4>div {
+	padding: 0px 0px;
+}
+
+#row-laugh4>.item-rowspacer {
+	height: 50px;
+}
+
+#row-dream2>.item-rowspacer {
+	height: 50px;
+}
+
+#row-marvel2>.item-rowspacer {
+	height: 70px;
+}
+
+#row-prices5 {
+	margin: 0px 0px;
+}
+
+#row-prices5>div {
+	padding: 0px 0px;
+}
+
+#row-list_prices2 {
+	margin: 0px 0px;
+}
+
+#row-list_prices2>div {
+	padding: 0px 0px;
+}
+
+#row-list_prices {
+	margin: 0px 0px;
+}
+
+#row-list_prices>div {
+	padding: 0px 0px;
+}
+
+#row-contact>.item-rowspacer {
+	height: 50px;
+}
+
+#row-contact3>.item-rowspacer {
+	height: 50px;
+}
+
+#row-form3>.item-rowspacer {
+	height: 50px;
+}
+
+#row-prices>.item-rowspacer {
+	height: 50px;
+}
+
+#row-marvel5>.item-rowspacer {
+	height: 50px;
+}
+
+#row-perf5>.item-rowspacer {
+	height: 50px;
+}
+
+#sub-container-marvel {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#sub-container-marvel>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-marvel>.container-vspacer {
+	height: 0px;
+}
+
+#sub-container-dream {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#sub-container-dream>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-dream>.container-vspacer {
+	height: 0px;
+}
+
+#sub-container-rum0ncflw7s {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#sub-container-rum0ncflw7s>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-rum0ncflw7s>.container-vspacer {
+	height: 0px;
+}
+
+#sub-container-sasblc4n8wo {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#sub-container-sasblc4n8wo>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-sasblc4n8wo>.container-vspacer {
+	height: 0px;
+}
+
+#sub-container-name_cirque {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#sub-container-name_cirque>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-name_cirque>.container-vspacer {
+	height: 0px;
+}
+
+#sub-container-laugh5 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#sub-container-laugh5>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-laugh5>.container-vspacer {
+	height: 0px;
+}
+
+#sub-container-dream3 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#sub-container-dream3>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-dream3>.container-vspacer {
+	height: 0px;
+}
+
+#sub-container-marvel3 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#sub-container-marvel3>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-marvel3>.container-vspacer {
+	height: 0px;
+}
+
+#sub-container-prices4 {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+#sub-container-prices4>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-prices4>.container-vspacer {
+	height: 0px;
+}
+
+#sub-container-list_prices {
+	border-radius: 0px 0px 0px 0px;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 0px 0px 0px 0px;
+	background-size: cover;
+  background-position: left top;
+  background-image:
+    url("http://cvfd.free.fr/WildCircus/version_codePen/images/cinema-3700545_640.jpg?");
+}
+
+#sub-container-list_prices>.row>.clearfix {
+	margin-bottom: 0px;
+}
+
+#sub-container-list_prices>.container-vspacer {
+	height: 0px;
+}
